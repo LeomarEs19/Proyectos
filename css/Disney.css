@@ -18,11 +18,11 @@ body{
 }
 
 h1{
-    color: rgb(165, 165, 165);
+    color: rgb(209, 209, 209);
     font-size: 20em;
     letter-spacing: 10px;
     font-family: "waltograph";
-    color: rgb(226, 223, 223); 
+    color: rgb(255, 255, 255); 
     text-shadow: rgb(92, 92, 92) 0.1em 0.1em 0.2em
     
 }
