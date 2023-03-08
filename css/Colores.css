@@ -12,8 +12,14 @@ body{
     display: flex;
     flex-direction: row;
     
-    
 }
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .size {
     width: 200px;
@@ -33,9 +39,6 @@ body{
     background-color: blueviolet;
 }
 
-.kl4{
-    background-color: brown;
-}
 
 .kl5{
     background-color: rgb(74,27,228);
@@ -59,4 +62,16 @@ body{
 
 .kl10{
     background-color: #E408F6;
+}
+
+.pil{
+    font-size: 3em;
+}
+
+.pal{
+    font-size: 1.3em;
+}
+
+.pol{
+    font-size: 1.5em;
 }
