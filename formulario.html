@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+<body>
+    <div>
+        <fieldset class="login-box">
+            <h2>Registro</h2>
+            <form>
+                <div class="lol">
+                    <label>Numero Documeto</label>
+                    <input type="text" value="">
+                </div>
+    
+                <div class="lol ">
+                    <label>Ingrse El Tipo De Documento</label>
+                        <select name="Documento" id="">
+                            <option value="C.C">Cedula Ciudadania</option>
+                            <option value="T.I">Tarjeta Identidad</option>
+                            <option value="R.G">Registro Civil</option>
+                            <option value="C.E">Cedula Extranjera</option>
+                        </select>
+                </div>
+    
+                <div class="lol">
+                    <label>Por Favor, Seleccione La Clase</label>
+                        <input type="radio" name="clase-vuelo">Primer clase 
+                        <input type="radio" name="clase-vuelo">Businessclass 
+                        <input type="radio" name="clase-vuelo">Clase Turistica
+                </div>
+                
+                <div class="lol">
+                    <label>Seleccione Un Dia Para Visualizar Los Vuelos Disponibles</label>
+                        <input type="checkbox" name="disponibilidad" value="2023-04-19">Miercoles, 19 De Abril 2023 
+                        <input type="checkbox" name="disponibilidad" value="2023-04-20">Jueves, 20 De Abril 2023 
+                        <input type="checkbox" name="disponibilidad" value="2023-04-21">Viernes, 21 De Abril 2023 
+                        <input type="checkbox" name="disponibilidad" value="2023-04-22">Sabado, 22 De Abril 2023 
+                </div>
+
+                <div class="boton">
+                    <input type="button" value="Enviar">
+                </div>
+                
+            </form>
+        </fieldset>
+
+    </div>
+</body>
+</html>
