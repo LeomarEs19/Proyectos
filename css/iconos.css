@@ -60,3 +60,8 @@ body {
   font-size: 14px;
 }
 
+li:hover {
+  background-color: rgba(109, 109, 109, 0.322);
+  transition: all 3;
+  cursor: pointer;
+}
