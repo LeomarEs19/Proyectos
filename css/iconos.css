@@ -6,14 +6,19 @@
   transition: 1s all;
 }
 
+body {
+  background: url(../img/1209629);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+
 .lateral {
   width: 230px;
   height: 100vh;
   border: 1px solid rgba(128, 128, 128, 0.191);
-}
-
-.lateral:hover {
-  overflow-y: scroll;
+  background-color: rgba(54, 56, 56, 0.425);
 }
 
 .lateral.close {
@@ -37,7 +42,7 @@
 .lateral > .btn-menu > i:hover {
   background-color: gray;
   transition: 1s all ease;
-  color: white;
+  color: rgb(233, 233, 233);
   border-radius: 5px;
 }
 
@@ -48,7 +53,7 @@
 }
 
 .lateral > ul > li > i {
-  color: gray;
+  color: rgb(253, 253, 253);
 }
 
 .lateral > ul > li > p {
