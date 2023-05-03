@@ -4,79 +4,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./public/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/iconos.css">
-    <link rel="stylesheet" href="icons/all.css">
-    <title>Icons Menu</title>
-
+    <title>DropMenu</title>
 </head>
 <body>
-    <button class="btn">
-        <span class="icon">
-            <svg viewBox="0 0 175 80" width="40" height="40">
-                <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-                <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
-            </svg>
-        </span>
-        <span class="text">MENU</span>
-    </button>
-</body>
-
-<aside>
-    <div>
-        <nav class="">
-            <button><i class="fa-solid fa-user"> Iniciar Sesion</i></button>
-        </nav>
-        <hr>
-
-        <nav class="">
-            <button><i class="fa-solid fa-plane"> Vuelos</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-solid fa-bed"> Alojamiento</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-solid fa-car"> Carros</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-solid fa-umbrella-beach"> Paquetes</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-solid fa-shield-halved"> Asistencia De Viajes</i></button>
-        </nav>
-        <hr>
-
-        <nav class="">
-            <button><i class="fa-solid fa-globe"> Explore</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-brands fa-kickstarter"> Blog</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-brands fa-kickstarter"> Vuelos Directos</i></button>
-        </nav>
-        <nav class="">
-            <button><i class="fa-solid fa-shield-heart"> Restricciones De Viaje</i></button>
-        </nav>
-        <hr>
-
-        <nav class="">
-            <button><i class="fa-solid fa-comments"> Comentarios</i></button>
-        </nav>
-        <hr>
-
-        <nav class="">
-            <button><i class="fa-solid fa-heart"> Trips</i></button>
-        </nav>
-        <hr>
-
-        <nav class="">
-            <button><i class="fa-solid fa-suitcase"> KAYAK For Business</i></button>
-        </nav>
-
-
+    <div class="container">
+        <div class="lateral">
+            <div class="btn-menu">
+                <i class="fa-solid fa-bars" id="dropMenu"></i>
+            </div>
+            <ul>
+                <li>
+                    <i class="fa-sharp fa-regular fa-circle-user"></i>
+                    <p>Iniciar Sesión</p>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-solid fa-plane"></i>
+                    <p>Vuelo</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bed"></i>
+                    <p>Alojamientos</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-car"></i>
+                    <p>Carros</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-umbrella-beach"></i>
+                    <p>Paquetes</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <p>Asistencia de viajes</p>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <p>Explore</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-kickstarter"></i>
+                    <p>Blog</p>
+                </li>
+                <li>
+                    <i class="fa-brands fa-kickstarter"></i>
+                    <p>Vuelos directos</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-shield"></i>
+                    <p>Restricciones de viajes</p>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>Comentarios</p>
+                </li>
+                <hr>
+                <li>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <p>Trips</p>
+                </li>
+            </ul>
+        </div>
     </div>
-</aside> 
-
-</div>
+    <script src="./js/icons.js"></script>
+</body>
 </html>
