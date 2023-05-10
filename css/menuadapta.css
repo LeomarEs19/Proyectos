@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/805233.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+
+.bar-menu{
+    color: rgb(255, 255, 255);
+    font-size: 2.2em;
+    position: absolute;
+    visibility: hidden;
+    top: 15px;
+    left: 30px;
+    cursor: pointer;
+}
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(68, 67, 67, 0.226);
+    height: 80px;
+}
+.main-menu{
+    list-style: none;
+    text-align: right;
+    font-family: 'Caveat', cursive;
+}
+a{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.gym{
+    height: 81px;
+    display: inline-block;
+    padding: 27px 40px;
+}
+li:hover{
+    cursor: pointer;
+    background-color: rgba(66, 66, 66, 0.342);
+}
+p{
+    margin: 120px 60px;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+@media only screen and (max-width:1152px) {
+    /*.main-menu{
+        background-color: rgb(96, 96, 96,.9);
+        margin-top: 81px;
+        padding: 0;
+    }*/
+    .main-nav{
+        height: 80px;;
+    }
+    .main-menu{
+        display: none; 
+    }
+    .main-menu-visible{
+        display: block;
+        background-color: rgba(48, 48, 48, 0.459);
+        /* margin-top: 81px; */
+        padding: 0;
+    }
+    .gym{
+        
+        width: 100%;
+        display: block;
+        text-align: center;
+        visibility: visible;
+        border-bottom: 1px solid rgb(112, 110, 110);
+        line-height: 80px;
+        padding: 0;
+    }
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .bar-menu{
+        visibility: visible;
+    }
+}
+
+p {
+    color: aliceblue;
+    font-size: 2em;
+    padding: 10px;
+    margin: 6px;
+}
+
+
+
+
+
+
+
+
