@@ -56,9 +56,9 @@ li:hover{
     background-color: rgba(66, 66, 66, 0.342);
 }
 p{
-    margin: 120px 60px;
+    margin: 12px 60px;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.6em;
     line-height: 1.3em;
 }
 @media only screen and (max-width:1152px) {
@@ -97,11 +97,14 @@ p{
     }
 }
 
-p {
+.pop {
     color: aliceblue;
-    font-size: 2em;
-    padding: 10px;
-    margin: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+    
 }
 
 
