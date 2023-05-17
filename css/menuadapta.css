@@ -91,6 +91,7 @@ p{
     }
     a:hover{
         background-color: rgba(0, 0, 0, 0.9);
+        padding-top: 0;
     }
     .bar-menu{
         visibility: visible;
@@ -109,7 +110,7 @@ p{
 
 img {
     position: absolute;
-    left: 170px;
+    left: 180px;
     top: 0;
     padding-bottom: 55px;
 }
