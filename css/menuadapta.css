@@ -84,9 +84,10 @@ p{
         display: block;
         text-align: center;
         visibility: visible;
-        border-bottom: 1px solid rgb(112, 110, 110);
+        border-bottom: 1px solid rgba(34, 33, 33, 0.575);
         line-height: 80px;
         padding: 0;
+        padding-top: 80px;
     }
     a:hover{
         background-color: rgba(0, 0, 0, 0.9);
@@ -95,9 +96,6 @@ p{
         visibility: visible;
     }
 
-    .imagen {
-        display: none;
-    }
 }
 
 .pop {
