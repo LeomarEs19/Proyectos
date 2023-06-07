@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    padding: 300px;
+    font-family: 'Signika Negative', sans-serif;
+}
+.toggle {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.pink {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #cabebe;
+    border: 1px solid #393a3a;
+    transition: .4s;
+    border-radius: 60px;
+}
+
+.pink:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 60px;
+    left: 0.27em;
+    bottom: 0.27em;
+    background-color: #ffffff;
+    transition: .4s;
+}
+  
+input:checked + .pink {
+    background-color: #3cff00;
+    border: 1px solid #00ff62;
+}
+  
+input:focus + .pink {
+    box-shadow: 0 0 1px #00ff95;
+}
+  
+input:checked + .pink:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+}
+
+
+.text-on-off{
+    font-size: 0.7em;
+    font-weight: 800;
+    color: white;
+}
+
+.on  {
+    position: relative;
+    top: 15px;
+    left: -10px;
+    cursor: pointer;
+}
+
+.off {
+    position: relative;
+    top: 15px;
+    left: -5px;
+    cursor: pointer;
+}
