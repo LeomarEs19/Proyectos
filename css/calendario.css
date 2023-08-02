@@ -1,0 +1,65 @@
+* {
+   padding: 0%;
+   margin: 0%; 
+   font-family: 'Barlow Condensed', sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(7, 140px);
+    grid-template-rows: 90px 70px repeat(7, 100px);
+    margin-top: 100px;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diassemana {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 10px 10px 10px 10px;
+    color: black;
+    font-size: 1.6em;
+    font-weight: lighter;
+    border-radius: 5px;
+}
+
+.titulo {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    border-bottom: 1px solid rgb(34, 34, 26);
+    text-align: center;
+    margin: 0px 10px 0px 0px;
+    font-size: 4em;
+    font-family: 'Lobster', cursive;
+}
+
+.diasMes {
+    background-color: rgb(245, 239, 239);
+    margin: 0px 10px 10px 0px;
+    padding: 3px 0px 0px 6px;
+    border-radius: 5px;
+    font-size: 1.4em;
+}
+
+.festivos {
+    background-color: rgb(212, 212, 206);
+    color: white;
+    position: relative;
+}
+
+.especial {
+    background-color: rgb(161, 161, 161);
+    color: black;
+    position: relative;
+}
+
+.contenedor .inicio {
+    grid-column-start: 4;
+}
