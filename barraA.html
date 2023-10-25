@@ -6,6 +6,7 @@
   <title>Amazon</title>
   <link rel="stylesheet" href="./css/BarraA.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <link rel="stylesheet" href="./icons/all.css">
 </head>
 <body>
     <header>
@@ -81,14 +82,18 @@
       </div>
     </header>
 
-    <!-- <section class="hero-section"></section>
+    <section class="hero-section"></section>
 
     <section class="shop-section">
       <div class="shop-images">
-        <div class="shop-link">
+        <div class="shop-link product__list">
           <h3>Shop Laptops &amp; Tables</h3>
-          <img src="images/img-1.png" alt="card">
-          <a href="#">Shop now</a>
+          <img
+          class="product__img"
+          src="./img/amazon/71OyrTkxpGL._AC_UY218_.jpg"
+          alt="card"
+          />
+          <span class="product__viewBtn">view details</span>
         </div>
         <div class="shop-link">
           <h3>Shop Smartwatches</h3>
@@ -106,7 +111,49 @@
           <a href="#">Shop now</a>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <main>
+      <div class="modal">
+        <div class="close">
+          <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+
+        <div class="product-content">  
+          <div class="box-img-producto">
+              <img src="./img2/Ryse Godzilla/Blackberry Lemonade.PNG" alt="" width="635px">
+          </div>
+          <div class="box-info-producto">
+              <label class="book-title">Godzilla Pre-Workout</label>
+              <label class="book-description">
+                - 11 g de citrulina total para congestiones masivas.* (9 g de L-citrulina pura y 2 g de nitrato de citrulina NO3-T® patentado).
+                <br>
+                <br>
+                3,2 g de beta-alanina para amortiguar el ácido láctico, reducir la fatiga muscular y aumentar la resistencia general.*
+                <br>
+                <br>
+                400 mg de cafeína total a partir de cafeína anhidra y cafeína de liberación prolongada patentada zumXR® para una energía limpia y sin choques.*
+                <br>
+                <br>
+                20 mg de vincamina, marca registrada de Thinkamine™, para una concentración y euforia nítidas.*
+                <br>
+                <br>
+                Fórmula totalmente transparente. Mezclas patentadas cero  .
+              </label>
+
+              <div class="img-cambio">
+                <img src="./img2/Ryse Godzilla/Blue Raspherry.PNG" alt="" width="100px" 
+                class="active">
+                <img src="./img2/Ryse Godzilla/Monsterberry Lime.PNG" alt="" width="100px">
+                <img src="./img2/Ryse Godzilla/Passion Pineapple.PNG" alt="" width="100px">
+                <img src="./img2/Ryse Godzilla/Strawberry Kiwi.PNG" alt="" width="100px">
+              </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+      <script src="./js/BarraA.js"></script>
 
 </body>
 </html>

@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 a {
@@ -33,7 +34,7 @@ header {
   justify-content: space-between;
   cursor: pointer;
   color: #fff;
-  max-width: 1400px;
+  max-width: 1400px; 
   margin: 0 auto;
 }
 
@@ -180,7 +181,7 @@ header {
 /* Hero Section */
 .hero-section {
   height: 400px;
-  background-image: url(".");
+  background-image: url("../img/805233.webp");
   background-position: center;
   background-size: cover;
 }
@@ -237,3 +238,75 @@ header {
   text-decoration: underline;
 }
 
+main{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  width: 70%;
+  height: 80%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.modal__right{
+  display: flex;
+  justify-content: end;
+}
+
+.product-content{
+  display: grid;
+  grid-template: "empty-left box-img-producto box-info-product empty-right"/
+                   20px       2fr             3fr             20px;
+}
+
+.box-img-producto{
+  grid-area:box-img-producto;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+
+.box-info-producto{
+  grid-area: box-info-product;
+  display: flex;
+  padding: 0 60px 0 60px;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.book-title{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.book-description{
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.img-cambio{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.close{
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+  margin-top: 12px;
+  font-size: 2em;
+}
