@@ -1,32 +1,57 @@
-const modal = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal__content");
-const close = document.querySelector(".modal__close");
-const modalImg = document.querySelector(".modal__img");
-const productList = document.querySelectorAll(".product__list");
-const title = document.querySelector(".detail__title");
-const cost = document.querySelector(".detail__price");
+const abrirModal = document.getElementById("abrirModal");
+const miModal = document.getElementById("miModal");
+const cerrarModal = document.getElementById("cerrarModal");
+const imagenModal = document.getElementById("imagenModal");
+var img1 = document.querySelector(".img1")
+var img2 = document.querySelector(".img2")
+var img3 = document.querySelector(".img3")
+var img4 = document.querySelector(".img4")
+var img5 = document.querySelector(".img5")
 
-const productCost = ["£395", "£245", "£195", "£295", "£345", "£455"];
+abrirModal.addEventListener("click", function () {
+  miModal.style.display = "block";
+});
 
-productList.forEach((list, index) => {
-  const view = list.querySelector(".product__viewBtn");
-  const productImg = list.querySelector(".product__img").getAttribute("src");
+cerrarModal.addEventListener("click", function () {
+  miModal.style.display = "none";
+});
 
-  view.addEventListener("click", () => {
-    modal.classList.add("modal--bg");
-    modalContent.classList.add("modal__content--show");
-    modalImg.setAttribute("src", productImg);
-    title.innerText = `product title ${index + 1}`;
-    cost.innerText = productCost[index];
+window.addEventListener("click", function (event) {
+  if (event.target == miModal) {
+    miModal.style.display = "none";
+  }
+});
+
+function setActive(img){
+  var imagenes = document.querySelectorAll(".img");
+  imagenes.forEach(function(imagenes){
+      imagenes.classList.remove("active");
   });
-});
+  img.classList.add("active");
+}
 
-close.addEventListener("click", () => {
-  modal.classList.remove("modal--bg");
-  modalContent.classList.remove("modal__content--show");
-});
-
-modal.addEventListener("click", () => {
-  modal.classList.remove("modal--bg");
-  modalContent.classList.remove("modal__content--show");
-});
+img1.addEventListener("click", function(){
+  imagenModal.src = ""
+  imagenModal.src = img1.src
+  setActive(img1)
+})
+img2.addEventListener("click", function(){
+  imagenModal.src = ""
+  imagenModal.src = img2.src
+  setActive(img2)
+})
+img3.addEventListener("click", function(){
+  imagenModal.src = ""
+  imagenModal.src = img3.src
+  setActive(img3)
+})
+img4.addEventListener("click", function(){
+  imagenModal.src = ""
+  imagenModal.src = img4.src
+  setActive(img4)
+})
+img5.addEventListener("click", function(){
+  imagenModal.src = ""
+  imagenModal.src = img5.src
+  setActive(img5)
+})

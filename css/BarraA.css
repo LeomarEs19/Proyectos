@@ -239,6 +239,8 @@ header {
 }
 
 main{
+  padding-left: 350px;
+  padding-top: 80px;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -251,8 +253,8 @@ main{
 }
 
 .modal {
-  width: 70%;
-  height: 80%;
+  width: 80%;
+  height: 85%;
   background: #fff;
   border-radius: 10px;
 }
@@ -270,16 +272,16 @@ main{
 
 .box-img-producto{
   grid-area:box-img-producto;
-  margin-top: -15px;
+  margin-top: -28px;
   margin-left: 10px;
 }
 
 .box-info-producto{
   grid-area: box-info-product;
   display: flex;
-  padding: 0 60px 0 60px;
+  padding: 0 150px 0 80px;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 1px;
 }
 
 .book-title{
@@ -307,6 +309,24 @@ main{
   display: flex;
   justify-content: end;
   margin-right: 15px;
-  margin-top: 12px;
+  margin-top: 15px;
   font-size: 2em;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.active{
+  border: 3px solid #08BBF9;
+}
+
+.img{
+  cursor: pointer;
+}
+
+.cerrar{
+  display: none;
+}
+
+.product__img >{
+  border-radius: 10px;
 }
