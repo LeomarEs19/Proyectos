@@ -158,6 +158,7 @@ header {
   font-size: 0.875rem;
 }
 
+
 .text{
     color: #675c59;
 }
@@ -254,7 +255,129 @@ header {
   height: 100%;
   position: relative;
   margin-top: -600px;
-  ma
 }
 
+main{
+  padding-left: 350px;
+  padding-top: 80px;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 
+.modal {
+  width: 80%;
+  height: 85%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.modal__right{
+  display: flex;
+  justify-content: end;
+}
+
+.product-content{
+  display: grid;
+  grid-template: "empty-left box-img-producto box-info-product empty-right"/
+                   20px       2fr             3fr             20px;
+}
+
+.box-img-producto{
+  grid-area:box-img-producto;
+  margin-top: -18px;
+  margin-left: 10px;
+}
+
+.box-info-producto{
+  grid-area: box-info-product;
+  display: flex;
+  padding: 0 150px 0 80px;
+  flex-direction: column;
+  padding-top: 1px;
+}
+
+.book-title{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.book-description{
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.img-cambio{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.close{
+  display: flex;
+  justify-content: end;
+  margin-right: 15px;
+  margin-top: 15px;
+  font-size: 2em;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.active{
+  border: 3px solid #08BBF9;
+}
+
+.img{
+  cursor: pointer;
+}
+
+.cerrar{
+  display: none;
+}
+
+.product__img >{
+  border-radius: 10px;
+  margin-left: -500px;
+}
+
+.miniaturas{
+  display: grid;
+  gap: 10px;
+  margin-top: -600px;
+  margin-left: 90px;
+}
+
+.box-des{
+  grid-area: box-info-product;
+  display: flex;
+  padding: 0 400px 0 150px;
+  flex-direction: column;
+  padding-top: 1px;
+  margin-left: -100px;
+}
+
+.producto{
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.titlo{
+  text-align: center;
+  font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  margin-top: -610px;
+}
